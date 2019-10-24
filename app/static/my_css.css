@@ -1,0 +1,175 @@
+/* Homepage */
+position: absolute;
+width: 1440px;
+height: 1024px;
+background: #FFFFFF;
+/* Rectangle */
+position: absolute;
+width: 1440px;
+height: 50px;
+left: 0px;
+top: 177px;
+background: #6FAFD2;
+/* Rectangle */
+position: absolute;
+width: 1440px;
+height: 42px;
+left: 0px;
+top: 135px;
+background: #2C54D6;
+/* Rectangle */
+position: absolute;
+width: 1440px;
+height: 50px;
+left: 0px;
+top: 455px;
+background: #6FAFD2;
+/* Rectangle */
+position: absolute;
+width: 1440px;
+height: 50px;
+left: 0px;
+top: 733px;
+background: #6FAFD2;
+/* vfrs-logo */
+position: absolute;
+width: 96px;
+height: 101px;
+left: 875px;
+top: 19px;
+background: url(vfrs-logo.jpg);
+/* 1200px-Vancouver_Police_Logo */
+position: absolute;
+width: 95px;
+height: 111px;
+left: 996px;
+top: 9px;
+background: url(1200px-Vancouver_Police_Logo.png);
+/* BCEHS logo */
+position: absolute;
+width: 301px;
+height: 68px;
+left: 1116px;
+top: 35px;
+background: url(BCEHS logo.png);
+/* Screen Shot 2018-09-15 at 15.11 */
+position: absolute;
+width: 167px;
+height: 137px;
+left: 0px;
+top: -2px;
+/* ARTS & CRAFTS */
+position: absolute;
+width: 282px;
+height: 44px;
+left: 15px;
+top: 455px;
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+color: #FFFFFF;
+/* GAMES */
+position: absolute;
+width: 218px;
+height: 44px;
+left: 17px;
+top: 736px;
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+color: #FFFFFF;
+/* SPORTS */
+position: absolute;
+width: 218px;
+height: 44px;
+left: 27px;
+top: 177px;
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+color: #FFFFFF;
+/* Screen Shot 2018-09-15 at 15.30 */
+position: absolute;
+width: 191px;
+height: 123px;
+left: 15px;
+top: 12px;
+background: url(Screen Shot 2018-09-15 at 15.30.png);
+/* About */
+position: absolute;
+width: 116px;
+height: 54px;
+left: 331px;
+top: 129px;
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+color: #FFFFFF;
+/* Search for a team! */
+position: absolute;
+width: 319px;
+height: 54px;
+left: 680px;
+top: 129px;
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+color: #FFFFFF;
+mix-blend-mode: normal;
+/* Sign in */
+position: absolute;
+width: 129px;
+height: 54px;
+left: 1267px;
+top: 129px;
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 36px;
+color: #FFFFFF;
+/* 5 */
+position: absolute;
+width: 216px;
+height: 216px;
+left: 17px;
+top: 517px;
+background: url(5.png);
+/* 4 */
+position: absolute;
+width: 216px;
+height: 216px;
+left: 17px;
+top: 799px;
+background: url(4.png);
+/* 3 */
+position: absolute;
+width: 216px;
+height: 216px;
+left: 473px;
+top: 239px;
+background: url(3.png);
+/* 2 */
+position: absolute;
+width: 216px;
+height: 216px;
+left: 17px;
+top: 239px;
+background: url(2.png);
+/* 1 201 */
+position: absolute;
+width: 216px;
+height: 216px;
+left: 245px;
+top: 239px;
+background: url(1.png);

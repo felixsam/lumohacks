@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Membership registration</h1>
+   <body>
+
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+         <h3>Member Information</h3>
+         Name<br>
+         <input type = "text" name = "nm" /></br>
+
+         Activity<br>
+         <textarea name = "activity" ></textarea><br>
+
+         City<br>
+         <input type = "text" name = "city" /><br>
+
+         Online<br>
+         <input type = "text" name = "online" /><br>
+         <input type = "submit" value = "submit" /><br>
+      </form>
+
+   </body>
+{% endblock %}

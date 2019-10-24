@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1> Find events nearby
+    <title>Find events nearby</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+</h1>
+  <body>
+    <div id="map"></div>
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+
+        infoWindow = new google.maps.InfoWindow;
+        var infowindow2 = new google.maps.InfoWindow({
+          content: 'Renfrew Community center',
+        });
+        var infowindow3 = new google.maps.InfoWindow({
+          content: 'Stanley Park',
+        });
+        var infowindow4 = new google.maps.InfoWindow({
+          content: 'Queen Elizabeth Park Basketball Courts',
+        });
+        var infowindow5 = new google.maps.InfoWindow({
+          content: 'Burnaby Lake Sports Complex West',
+        });
+
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            var pos2 = new google.maps.LatLng(49.2511,-123.0427);
+            var pos3 = new google.maps.LatLng(49.300362,-123.142593);
+            var pos4 = new google.maps.LatLng(49.238670,-123.114950);
+            var pos5 = new google.maps.LatLng(49.252680,-122.968730);
+
+            var marker = new google.maps.Marker({
+                position: pos,
+                map: map,
+                title: 'My Location'
+            });
+            var marker2 = new google.maps.Marker({
+                icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+                position: pos2,
+                title: 'Renfrew Community Centre',
+            });
+            var marker3 = new google.maps.Marker({
+                icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                position: pos3,
+                title: 'Stanley Park',
+            });
+            var marker4 = new google.maps.Marker({
+                icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+                position: pos4,
+                title: 'Queen Elizabeth Park Basketball Courts',
+            });
+            var marker5 = new google.maps.Marker({
+                icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+                position: pos5,
+                title: 'Burnaby Lake Sports Complex West',
+            });
+
+            marker2.setMap(map);
+            marker3.setMap(map);
+            marker4.setMap(map);
+            marker5.setMap(map);
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('You are here.');
+            infoWindow.open(map,marker);
+
+            marker.addListener('click', function() {
+              infoWindow.open(map, marker);
+            });
+
+            map.setCenter(pos);
+            marker2.addListener('click', function() {
+              infowindow2.open(map, marker2);
+            });
+            marker3.addListener('click', function() {
+              infowindow3.open(map, marker3);
+            });
+            marker4.addListener('click', function() {
+              infowindow4.open(map, marker4);
+            });
+            marker5.addListener('click', function() {
+              infowindow5.open(map, marker5);
+            });
+
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=myKEY&callback=initMap">
+    </script>
+  </body>
+    <br>
+             <h3 style="background-color:#6FAFD2">
+              <font color = 'white'> EVENTS NEARBY</font>
+         </h3>
+{% endblock %}

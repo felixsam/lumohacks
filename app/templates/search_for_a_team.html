@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Search For A Team!</h1>
+    <body>
+     <div>
+
+         <h3 style="background-color:#6FAFD2">
+             <font color = 'white'> SPORTS </font>
+         </h3>
+             <a href="{{ url_for('upcoming_events') }}"> <img src="{{ soccer }}" alt="soccer" width="=25%"
+                                                              height="25%">
+             </a>
+             <a href="{{ url_for('upcoming_events') }}"> <img src="{{ basketball }}" alt="basketball" width="=25%" height="25%"></a>
+             <a href="{{ url_for('upcoming_events') }}"> <img src="{{ volleyball }}" alt="volleyball" width="=25%" height="25%"></a>
+          <br>
+         <br>
+         <h3 style="background-color:#6FAFD2">
+              <font color = 'white'> ARTS & CRAFTS</font>
+         </h3>
+             <a href="{{ url_for('upcoming_events') }}"> <img src="{{ knitting }}" alt="knitting" width="=25%" height="25%"></a>
+          <br>
+         <br>
+         <h3 style="background-color:#6FAFD2">
+              <font color = 'white'> GAMES </font>
+         </h3>
+             <a href="{{ url_for('upcoming_events') }}"> <img src="{{ chess }}" alt="chess" width="=25%" height="25%"></a>
+          <a href="{{ url_for('upcoming_events') }}"> <img src="{{ cards }}" alt="cards" width="=25%" height="25%"></a>
+    </div>
+    </body>
+{% endblock %}

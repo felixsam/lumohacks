@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Member List</h1>
+   <body>
+
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>Activity</td>
+            <td>City</td>
+            <td>Online</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["activity"]}}</td>
+               <td> {{ row["city"]}}</td>
+               <td>{{row['online']}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/">Go back to home page</a>
+
+   </body>
+{% endblock %}
